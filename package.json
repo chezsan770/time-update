@@ -7,6 +7,6 @@
     "heartbeat": "node scripts/update-readme-heartbeat.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
   }
 }
