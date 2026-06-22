@@ -2,7 +2,7 @@
   "name": "github-ping-heartbeat",
   "version": "1.0.0",
   "private": true,
-  "description": "Scheduled README heartbeat updater for Render.",
+  "description": "Scheduled README heartbeat updater for GitHub Actions.",
   "scripts": {
     "heartbeat": "node scripts/update-readme-heartbeat.js"
   },
