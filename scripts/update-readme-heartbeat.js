@@ -9,11 +9,13 @@ const startMarker = "<!-- heartbeat:start -->";
 const endMarker = "<!-- heartbeat:end -->";
 
 function runGit(args, options = {}) {
-  return execFileSync("git", args, {
+  const output = execFileSync("git", args, {
     cwd: repoRoot,
     encoding: "utf8",
     stdio: options.stdio || ["ignore", "pipe", "pipe"]
-  }).trim();
+  });
+
+  return typeof output === "string" ? output.trim() : "";
 }
 
 function gitConfig(key, value) {
